@@ -10,8 +10,10 @@ lume_langdata automates the creation of language-related [shared data for Lume p
 Call lume_langdata from your Lume project's [Lume project's configuration file](https://lume.land/docs/configuration/config-file/):
 
 ```ts
+// _config.ts
+
 import lume from 'lume/mod.ts';
-import lume_langdata from 'https://deno.land/x/lume_langdata@v1.0.2/mod.ts';
+import lume_langdata from 'https://deno.land/x/lume_langdata@v1.0.3/mod.ts';
 
 export default
 lume({
