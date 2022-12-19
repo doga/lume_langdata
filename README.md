@@ -13,7 +13,7 @@ Call lume_langdata from your [Lume project's configuration file](https://lume.la
 // _config.ts
 
 import lume from 'lume/mod.ts';
-import lume_langdata from 'https://deno.land/x/lume_langdata@v1.0.4/mod.ts';
+import lume_langdata from 'https://deno.land/x/lume_langdata@v1.0.5/mod.ts';
 
 export default
 lume({
@@ -26,7 +26,7 @@ lume({
 
 ## Lume project directory structure
 
-lume_langdata assumes that your [Lume project's source directory](https://lume.land/docs/configuration/config-file/#src) contains one directory for each language. The directory name must be a [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes). lume_langdata will ignore directories with a non-conforming name.
+lume_langdata assumes that your [Lume project's source directory](https://lume.land/docs/configuration/config-file/#src) contains one directory for each language. The directory name must be a [ISO 639-1 language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes). lume_langdata will ignore directories with a non-conforming name. Note that the names of the language directories must be lower-cased.
 
 For example, if your source directory contains the following directories and files:
 
@@ -35,7 +35,7 @@ For example, if your source directory contains the following directories and fil
 - `assets`
 - `index.html`
 
-then lume_langdata will ignore the `assets` directory and the `index.html` file. Note that the name of the language directories must be lower-cased.
+then lume_langdata will ignore the `assets` directory and the `index.html` file.
 
 ## Which shared data is generated?
 
