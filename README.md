@@ -3,7 +3,7 @@
 A [Lume](https://lume.land) plugin for developing multi-language websites.
 Lume is a static-site generator for the [Deno](https://deno.land) JavaScript/TypeScript runtime.
 
-lume_langdata automates the creation of language-related [shared data for Lume projects](https://lume.land/docs/creating-pages/shared-data/#the-_data-directories);
+lume_langdata automates the creation of language-related [shared data for Lume projects](https://lume.land/docs/creating-pages/shared-data/#the-_data-directories).
 
 ## Usage
 
@@ -11,7 +11,7 @@ Call lume_langdata from your Lume project's [Lume project's configuration file](
 
 ```ts
 import lume from 'lume/mod.ts';
-import lume_langdata from 'https://deno.land/x/lume_langdata@v1.0.1/mod.ts';
+import lume_langdata from 'https://deno.land/x/lume_langdata@v1.0.2/mod.ts';
 
 export default
 lume({
@@ -33,7 +33,7 @@ For example, if your source directory contains the following directories and fil
 - `assets`
 - `index.html`
 
-then lume_langdata will ignore the `assets` directory and the `index.html` file. Note that the name of the language directory must be lower-cased.
+then lume_langdata will ignore the `assets` directory and the `index.html` file. Note that the name of the language directories must be lower-cased.
 
 ## Which shared data is generated?
 
@@ -41,7 +41,7 @@ Given the source directory structure shown above, lume_langdata will generate th
 
 ### List of site languages
 
-A file named `languages.json` will be generated in the source directory, containing:
+In this example, a file named `languages.json` will be generated in the source directory, containing:
 
 ```json
 ["en","tr"]
