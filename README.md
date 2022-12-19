@@ -13,7 +13,7 @@ Call lume_langdata from your [Lume project's configuration file](https://lume.la
 // _config.ts
 
 import lume from 'lume/mod.ts';
-import lume_langdata from 'https://deno.land/x/lume_langdata@v1.0.5/mod.ts';
+import lume_langdata from 'https://deno.land/x/lume_langdata@v1.0.6/mod.ts';
 
 export default
 lume({
@@ -92,6 +92,10 @@ The main use case for this shared data is the localization of [Lume layouts](htt
   <!-- ... -->
 </html>
 ```
+
+## Demo
+
+[This website project](https://github.com/doga/qworum-website) uses Lume and lume_langdata.
 
 ## License
 
