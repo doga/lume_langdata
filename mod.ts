@@ -73,7 +73,7 @@ function () {
         Deno.writeTextFileSync(
           langYamlFilenameAbs,
           `# This file was automatically generated at build time
-# on ${timestamp} by the "langdata" Lume plugin.
+# on ${timestamp} by the "lume_langdata" Lume plugin.
 ${yaml}`);
       } catch (_error) {
         // should never happen
