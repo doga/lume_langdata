@@ -13,7 +13,7 @@ Call lume_langdata from your [Lume project's configuration file](https://lume.la
 // _config.ts
 
 import lume from 'lume/mod.ts';
-import lume_langdata from 'https://deno.land/x/lume_langdata@v1.0.6/mod.ts';
+import lume_langdata from 'lume_langdata/mod.ts';
 
 export default
 lume({
@@ -23,6 +23,19 @@ lume({
 })
 .use(lume_langdata());
 ```
+
+Don't forget to indicate the `lume_langdata/` import prefix in your lume project's `import_map.json` file:
+
+```json
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v1.14.2/",
+    "lume_langdata/": "https://deno.land/x/lume_langdata@v1.0.7/"
+  }
+}
+```
+
+`lume_langdata@v1.x.x` versions are compatible with all `lume@v1.x.x` versions from `lume@v1.13.x` upwards.
 
 ## Lume project directory structure
 
