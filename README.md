@@ -24,7 +24,7 @@ lume({
 .use(lume_langdata());
 ```
 
-Don't forget to indicate the `lume_langdata/` import prefix in your lume project's `import_map.json` file:
+Don't forget to define the `lume_langdata/` import prefix in your lume project's `import_map.json` file:
 
 ```json
 {
@@ -35,7 +35,7 @@ Don't forget to indicate the `lume_langdata/` import prefix in your lume project
 }
 ```
 
-`lume_langdata@v1.x.x` versions are compatible with all `lume@v1.x.x` versions from `lume@v1.13.x` upwards.
+`lume_langdata@v1.x.x` versions are compatible with `lume@v1.x.x` versions from `lume@v1.13.x` upwards.
 
 ## Lume project directory structure
 
@@ -105,6 +105,13 @@ The main use case for this shared data is the localization of [Lume layouts](htt
   <!-- ... -->
 </html>
 ```
+
+## Other relevant Lume add-ons
+
+If you are developing multi-language sites, the following Lume plugins are a nice complement to the lume_cross_language_content add-on:
+
+- [lume_navbardata](https://deno.land/x/lume_navbardata)
+- [lume_cross_language_content](https://deno.land/x/lume_cross_language_content)
 
 ## Demo
 
