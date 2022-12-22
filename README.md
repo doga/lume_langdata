@@ -30,7 +30,7 @@ Don't forget to define the `lume_langdata/` import prefix in your lume project's
 {
   "imports": {
     "lume/": "https://deno.land/x/lume@v1.14.2/",
-    "lume_langdata/": "https://deno.land/x/lume_langdata@v1.0.7/"
+    "lume_langdata/": "https://deno.land/x/lume_langdata@v1.0.9/"
   }
 }
 ```
@@ -108,7 +108,7 @@ The main use case for this shared data is the localization of [Lume layouts](htt
 
 ## Other relevant Lume add-ons
 
-If you are developing multi-language sites, the following Lume plugins are a nice complement to the lume_cross_language_content add-on:
+If you are developing multi-language sites, the following Lume plugin and add-on are a nice complement to the lume_langdata plugin:
 
 - [lume_navbardata](https://deno.land/x/lume_navbardata)
 - [lume_cross_language_content](https://deno.land/x/lume_cross_language_content)
