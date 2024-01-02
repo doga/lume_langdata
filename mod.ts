@@ -6,16 +6,12 @@
 // ▶︎ This data can be used in layouts. For example a layout file can contain "<!DOCTYPE html><html lang='{{ lang.code }}'> ..."
 // ▶︎ /index.html can shunt the user to his/her preferred language with a JavaScript code such as fetch('/languages.json').then((response) => response.json()).then((siteLanguages) => { /*...*/ });
 
-import * as path from "https://deno.land/std@0.167.0/path/mod.ts";
-import { Site } from "lume/core.ts";
-import YAML from 'https://cdn.skypack.dev/pin/yaml@v2.1.3-ntmfesRl3kdsLKTvvOl6/mode=imports,min/optimized/yaml.js';
-import * as date from 'https://deno.land/std@0.160.0/datetime/mod.ts';
-
-import {Language} from './modules/language.ts';
+// external dependencies
+import {path, YAML, date, Lang} from './deps.ts'; 
 
 export default 
 function () {
-  return (site: Site) => {
+  return (site: Lume.Site) => {
     // console.info(`ℹ️ langdata: site: ${JSON.stringify(site)}`);
 
     const
@@ -28,7 +24,7 @@ function () {
     // console.info(`ℹ️ langdata: projectSourceDirectoryAbs: ${projectSourceDirectoryAbs}`);
 
     for (const dirEntry of Deno.readDirSync(projectSourceDirectoryAbs)) {
-      if(!(dirEntry.isDirectory && Language.exists(dirEntry.name)))continue;
+      if(!(dirEntry.isDirectory && Lang.getLanguageInfo(dirEntry.name)))continue;
 
       // directory serves the site in this language: dirEntry.name
 

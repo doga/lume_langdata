@@ -29,13 +29,13 @@ Don't forget to define the `lume_langdata/` import prefix in your lume project's
 ```json
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.14.2/",
-    "lume_langdata/": "https://deno.land/x/lume_langdata@v1.0.9/"
+    "lume/": "https://deno.land/x/lume@v2.0.2/",
+    "lume_langdata/": "https://deno.land/x/lume_langdata@v2.0.0/"
   }
 }
 ```
 
-`lume_langdata@v1.x.x` versions are compatible with `lume@v1.x.x` versions from `lume@v1.13.x` upwards.
+`lume_langdata@v1.x.x` versions are compatible with `lume@v2.x.x`.
 
 ## Lume project directory structure
 
