@@ -30,7 +30,7 @@ In your lume project's `deno.json` file, don't forget to define the `lume_langda
 {
   "imports": {
     "lume/"         : "https://deno.land/x/lume@v2.0.2/",
-    "lume_langdata"  : "https://deno.land/x/lume_langdata@v2.0.1/mod.ts",
+    "lume_langdata"  : "https://deno.land/x/lume_langdata@v2.0.2/mod.ts",
   },
   "compilerOptions": {
     "types": [
@@ -113,7 +113,7 @@ The main use case for this shared data is the localization of [Lume layouts](htt
 
 ## Other relevant Lume add-ons
 
-If you are developing multi-language sites, the following Lume plugin and add-on is a nice complement to the lume_langdata plugin:
+If you are developing multi-language sites, the following Lume plugin is a nice complement to the lume_langdata plugin:
 
 - [lume_navbardata](https://deno.land/x/lume_navbardata)
 
