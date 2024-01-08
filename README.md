@@ -7,7 +7,7 @@ lume_langdata automates the creation of language-related [shared data for Lume p
 
 ## Adding `lume_langdata` to your Lume project
 
-✅ You can [simply use mdrb](./add_to_lume_project.md) and skip the rest of this section. Or else read on.
+✅ You can [simply use mdrb](https://deno.land/x/lume_langdata/add_to_lume_project.md) and skip the rest of this section. Or else read on.
 
 Call lume_langdata from your [Lume project's configuration file](https://lume.land/docs/configuration/config-file/):
 
@@ -32,7 +32,7 @@ In your lume project's `deno.json` file, don't forget to define the `lume_langda
 {
   "imports": {
     "lume/"         : "https://deno.land/x/lume@v2.0.2/",
-    "lume_langdata"  : "https://deno.land/x/lume_langdata@v2.0.3/mod.ts",
+    "lume_langdata"  : "https://deno.land/x/lume_langdata@v2.0.4/mod.ts",
   },
   "compilerOptions": {
     "types": [
