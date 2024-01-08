@@ -24,8 +24,10 @@ Adding `lume_langdata` to this lume project will modify the `deno.json` and `_co
 // Update deno.json
 const deno = JSON.parse(await Deno.readTextFile('./deno.json'));
 if(!deno.imports) deno.imports = {};
-if(!deno.imports.lume_langdata) deno.imports.lume_langdata = 'https://deno.land/x/lume_langdata/mod.ts';
-await Deno.writeTextFile('./deno.json', JSON.stringify(deno, null, 2));
+if(!deno.imports.lume_langdata) {
+  deno.imports.lume_langdata = 'https://deno.land/x/lume_langdata/mod.ts';
+  await Deno.writeTextFile('./deno.json', JSON.stringify(deno, null, 2));
+}
 
 // Update _config.ts
 const lume = await Deno.readTextFile('./_config.ts');

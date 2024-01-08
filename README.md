@@ -32,7 +32,7 @@ In your lume project's `deno.json` file, don't forget to define the `lume_langda
 {
   "imports": {
     "lume/"         : "https://deno.land/x/lume@v2.0.2/",
-    "lume_langdata"  : "https://deno.land/x/lume_langdata@v2.0.4/mod.ts",
+    "lume_langdata"  : "https://deno.land/x/lume_langdata@v2.0.5/mod.ts",
   },
   "compilerOptions": {
     "types": [
