@@ -5,7 +5,9 @@ Lume is a static-site generator for the [Deno](https://deno.land) JavaScript/Typ
 
 lume_langdata automates the creation of language-related [shared data for Lume projects](https://lume.land/docs/creating-pages/shared-data/#the-_data-directories).
 
-## Usage
+## Adding `lume_langdata` to your Lume project
+
+✅ You can [simply use mdrb](./add_to_lume_project.md) and skip the rest of this section. Or else read on.
 
 Call lume_langdata from your [Lume project's configuration file](https://lume.land/docs/configuration/config-file/):
 
@@ -13,7 +15,7 @@ Call lume_langdata from your [Lume project's configuration file](https://lume.la
 // _config.ts
 
 import lume from 'lume/mod.ts';
-import lume_langdata from 'lume_langdata/mod.ts';
+import lume_langdata from 'lume_langdata';
 
 export default
 lume({
@@ -30,7 +32,7 @@ In your lume project's `deno.json` file, don't forget to define the `lume_langda
 {
   "imports": {
     "lume/"         : "https://deno.land/x/lume@v2.0.2/",
-    "lume_langdata"  : "https://deno.land/x/lume_langdata@v2.0.2/mod.ts",
+    "lume_langdata"  : "https://deno.land/x/lume_langdata@v2.0.3/mod.ts",
   },
   "compilerOptions": {
     "types": [
